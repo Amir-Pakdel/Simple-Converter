@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبدیلگر متن</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>🔄 تبدیلگر متن</h1>
+        
+        <div class="format-selector">
+            <label>فرمت تبدیل:</label>
+            <select id="format-select">
+                <option value="base64">Base64</option>
+                <option value="binary">Binary</option>
+                <option value="hex">Hex</option>
+                <option value="octal">Octal</option>
+                <option value="ascii">ASCII</option>
+                <option value="unicode">Unicode</option>
+                <option value="morse">Morse Code</option>
+                <option value="url">URL Encode</option>
+                <option value="superscript">Superscript</option>
+                <option value="subscript">Subscript</option>
+                <option value="base32">Base32</option>
+                <option value="wingding">Wingding</option>
+            </select>
+        </div>
+
+        <div class="converter-box">
+            <div class="input-section">
+                <label>متن ورودی:</label>
+                <textarea id="input-text" placeholder="متن خود را وارد کنید..."></textarea>
+            </div>
+
+            <div class="buttons-section">
+                <button class="convert-btn" id="encode-btn">تبدیل به فرمت انتخابی →</button>
+                <button class="convert-btn" id="decode-btn">← تبدیل از فرمت انتخابی</button>
+            </div>
+
+            <div class="output-section">
+                <label>نتیجه:</label>
+                <textarea id="output-text" placeholder="نتیجه تبدیل..." readonly></textarea>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <p id="info-text">Base64: یک روش رمزگذاری برای تبدیل داده‌های باینری به متن ASCII</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
